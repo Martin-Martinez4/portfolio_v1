@@ -1,0 +1,57 @@
+
+.aboutme{
+
+    &-container{
+
+        box-sizing: border-box;
+
+        height: 75vh;
+        width: calc(95vw  - var(--nav-width));
+
+        margin: auto;
+
+        text-align: center;
+
+        color: var(--white);
+
+        background-color: var(--secondary-color);
+
+        display: flex;
+        flex-direction: column;
+
+        // justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+
+    }
+
+    &-header{
+        color: var(--white);
+
+        justify-self: flex-start;
+
+        font-size: 2rem;
+
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        &~p{
+
+            font-size: 2rem;
+        }
+    }
+
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+
+    justify-content: center;
+
+}
+
