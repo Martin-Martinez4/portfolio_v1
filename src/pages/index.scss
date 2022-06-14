@@ -3,7 +3,7 @@ h1.biggest{
 
     color: var( --primary-color-lightest);
     font-size: 3rem;
-    line-height: 2.5rem;
+  
 }
 
 .big{
@@ -70,6 +70,30 @@ h1.biggest{
 
 }
 
+@media screen and (max-width: 550px) {
+
+
+    h1.biggest{
+
+        color: var( --primary-color-lightest);
+        font-size: 2rem;
+      
+    }
+    
+    .big{
+    
+        color: var( --primary-color-lightest);
+        font-size: 1rem;
+    }
+    .bigger{
+    
+        // color: var( --primary-color-lightest);
+        color: var( --white);
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+}
+
 .main-content{
 
     margin-top: var(--nav-height);
@@ -86,16 +110,28 @@ input{
     margin: 8px 0;
 
     border: 2px solid var(--primary-color);
-    border-radius: 20px;
+    border-radius: 4px;
     box-sizing: border-box;
+
+    // background-color: var(--secondary-color-lightest);
 
     &:focus, &:active{
 
         outline: 2px solid var(--tertiary-color);
-        border-radius: 20px;
+        border-radius: 8px;
         box-sizing: border-box;
 
     }
+}
+
+.form-label {
+
+    text-align: left;
+    float: left;
+    width: 100%;
+
+    font-size: 1.5rem;
+
 }
 
 textarea {
@@ -115,9 +151,17 @@ textarea {
     &:focus, &:active{
 
         outline: 2px solid var(--tertiary-color);
-        border-radius: 20px;
+        border-radius: 8px;
         box-sizing: border-box;
 
     }
 }
+
+.svg-container{
+
+    display: flex;
+
+    margin: .2rem;
+}
+
 

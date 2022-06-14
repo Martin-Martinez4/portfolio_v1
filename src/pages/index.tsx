@@ -1,5 +1,5 @@
 
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 import { Link } from "gatsby";
 
@@ -8,6 +8,11 @@ import Layout from "../components/layout/layout";
 import AboutMe from "../components/about/about";
 
 import Projects from "../components/projects/projects";
+
+import GithubSvg from "../images/svg/GithubSvg";
+import LinkedinSvg from "../images/svg/LinkedinSvg";
+import SiteSvg from "../images/svg/SiteSvg";
+import ChevronSvg from "../images/svg/ChevronSvg";
 
 // styles
 const pageStyles = {
@@ -107,6 +112,7 @@ import "./index.scss";
 
 // markup
 const IndexPage: FC = () => {
+
   return (
 
     <>
@@ -119,7 +125,8 @@ const IndexPage: FC = () => {
             <h1 className="biggest" >Hello, I am Martin Martinez</h1>
             <h2 className="bigger" >I develop web apps and create web sites</h2>
 
-            <p>A professional summary stating your best-selling points based on the job description e.g. I am a Software Engineer with strong fundamentals in XXX looking to XXXX.</p>
+            {/* <p>A professional summary stating your best-selling points based on the job description e.g. I am a Software Engineer with strong fundamentals in XXX looking to XXXX.</p> */}
+            <p>I am a web developer with strong fundamentals in the React, Node, JavaScript, and CSS looking to create websites and apps that are performant and user-friendly.  </p>
 
             <a className="button button-primary">See My Projects</a>
 
@@ -152,10 +159,21 @@ const IndexPage: FC = () => {
 
 
 <nav className="nav bottom-nav">
-<ul>
-    <li><Link to="/" >Home</Link></li>
-    <li><Link to="/about" >About</Link></li>
-</ul>
+  <ul className="nav-container-bottom">
+      <li className="svg-container"> 
+      <Link to="https://github.com/Martin-Martinez4" >
+
+        <GithubSvg classes="white svg-medium"></GithubSvg> 
+      </Link>
+      <Link to="/about">
+        <LinkedinSvg classes="white svg-medium"></LinkedinSvg>
+      </Link>
+      <Link to="/about">
+        <SiteSvg classes="white svg-medium"></SiteSvg>
+      </Link>
+      </li>
+      <li>Copyright © 2022 Martin Martinez</li>
+  </ul>
 </nav>
       </main>
     </Layout>

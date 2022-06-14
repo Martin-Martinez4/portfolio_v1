@@ -6,15 +6,16 @@
         box-sizing: border-box;
 
         height: 75vh;
-        width: calc(95vw  - var(--nav-width));
+        width: calc(100vw  - var(--nav-width));
 
-        margin: auto;
+        // margin: auto;
 
         text-align: center;
 
         color: var(--white);
 
-        background-color: var(--secondary-color);
+        // background-color: var(--secondary-color);
+        background-color: var( --secondary-color-dark);
 
         display: flex;
         flex-direction: column;
@@ -22,7 +23,7 @@
         // justify-content: center;
         align-items: center;
 
-        border-radius: 20px;
+        border-radius: 5px;
 
     }
 
