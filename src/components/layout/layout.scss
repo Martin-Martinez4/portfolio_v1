@@ -1,6 +1,17 @@
 
 :root{
     --nav-height: 7vh;
+
+    @media screen and (max-width: 450px) {
+
+        // :root{
+
+        //     --nav-height: 8vh;
+        // }
+        
+        --nav-height: 10vh;
+    }
+
     --nav-width: 4.5vw;
 
     --white: rgb(240, 250, 250);
@@ -97,6 +108,8 @@ table {
 
         display: flex;
         align-items: center;
+        overflow-y: hidden;
+
 
         &-bottom{
 
@@ -148,7 +161,7 @@ table {
     
         color: var(--white);
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     &-horizontal{
@@ -198,6 +211,7 @@ table {
     justify-content: end;
     position: fixed;
     z-index: 1;
+
 }
 
 .horizontal-nav{

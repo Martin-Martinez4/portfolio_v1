@@ -27,6 +27,8 @@
 
     }
 
+
+
     &-header{
         color: var(--white);
 
@@ -41,9 +43,29 @@
 
             font-size: 2rem;
         }
+        
+      
+    }
+
+    @media screen and (max-width: 550px), screen and (max-height: 720px){
+            
+        
+        &-header{
+       
+
+            font-size: 1.5rem;
+
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+          
+        }
+        
     }
 
 }
+
+
 
 .form{
 
@@ -55,4 +77,22 @@
     justify-content: center;
 
 }
+
+@media screen and (max-width: 550px), screen and (max-height: 720px){
+            
+        
+    form.form{
+
+        display: flex;
+        flex-direction: column;
+    
+        width: 60vw;
+    
+        justify-content: center;
+    
+    }
+    
+}
+
+
 
