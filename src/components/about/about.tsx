@@ -7,7 +7,7 @@ const ContactMe: FC = () => {
 
     return (
 
-        <div className="aboutme-container">
+        <div className="aboutme-container" id="contactMe">
             <div className="margin-auto">
                 <h1 className="aboutme-header">Contact Me</h1>
 

@@ -3,10 +3,12 @@
 
     &-container{
 
+        margin: auto;
+
         box-sizing: border-box;
 
         height: 75vh;
-        width: calc(100vw  - var(--nav-width));
+        width: calc(100vw - var(--nav-width));
 
         // margin: auto;
 

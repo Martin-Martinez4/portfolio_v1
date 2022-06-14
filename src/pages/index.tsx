@@ -165,12 +165,12 @@ const IndexPage: FC = () => {
 
         <GithubSvg classes="white svg-medium"></GithubSvg> 
       </Link>
-      <Link to="/about">
+      {/* <Link to="/about">
         <LinkedinSvg classes="white svg-medium"></LinkedinSvg>
       </Link>
       <Link to="/about">
         <SiteSvg classes="white svg-medium"></SiteSvg>
-      </Link>
+      </Link> */}
       </li>
       <li>Copyright © 2022 Martin Martinez</li>
   </ul>

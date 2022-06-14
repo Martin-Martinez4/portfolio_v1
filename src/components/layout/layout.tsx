@@ -29,6 +29,12 @@ const Layout: FC<Props> = ({ children }) => {
     }
 
     useEffect(() => {
+
+        if (typeof window !== "undefined") {
+            // eslint-disable-next-line global-require
+            require("smooth-scroll")('a[href*="#"]')
+        }
+
         const onScroll = () => setOffset(window.pageYOffset);
         // clean up code
         window.removeEventListener('scroll', onScroll);
@@ -43,28 +49,17 @@ const Layout: FC<Props> = ({ children }) => {
             <ul className={`nav-container`}>
              
                 {/* <li  className="nav-link"><Link to="/about" >About</Link></li> */}
-                <li  className="nav-link"><Link to="/about" >Projects</Link></li>
-                <li  className="nav-link"><Link to="/about" >Contact</Link></li>
+                <li  className="nav-link"><a href="#projects" >Projects</a></li>
+                <li  className="nav-link"><a href="#contactMe" >Contact</a></li>
             </ul>
         </nav>
 
-        
-        {/* <nav className="nav horizontal-nav">
-            <ul className="nav-container-horizontal">
-               
-                <li  className="nav-link-horizontal width-550-hidden"><Link to="https://github.com/Martin-Martinez4" ><img src={Github} className="nav-link-horizontal-icon"></img></Link></li>
-                <li  className="nav-link-horizontal width-550-hidden"><Link to="/about" ><img  className="nav-link-horizontal-icon" src={LinkdIn}></img></Link></li>
-                <li  className="nav-link-horizontal width-550-hidden"><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Site}></img></Link></li>
-                <li  className="nav-link-horizontal hidden-min-width-550"><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Chevron}></img></Link></li>
-            </ul>
-
-        </nav> */}
         <nav className={`nav horizontal-nav ${widerNav ? "wider" : "" } `}>
             <ul className="nav-container-horizontal">
                
                 <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="https://github.com/Martin-Martinez4" ><img src={Github} className="nav-link-horizontal-icon"></img></Link></li>
-                <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={LinkdIn}></img></Link></li>
-                <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Site}></img></Link></li>
+                {/* <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={LinkdIn}></img></Link></li>
+                <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Site}></img></Link></li> */}
                 <li  className={`nav-link-horizontal ${widerNav ? "hidden" : "hidden-min-width-550" }`}>
                         {/* <img  className="nav-link-horizontal-icon" src={Chevron}></img> */}
                         <ChevronSvg mode={2} classes={"nav-link-horizontal-icon"} toggleFunciton={() => toggleBoolState(widerNav, setWiderNav)} ></ChevronSvg>
