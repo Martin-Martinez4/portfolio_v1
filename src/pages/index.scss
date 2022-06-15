@@ -1,4 +1,62 @@
 
+.grow { 
+    transition: all .2s ease-in-out; 
+
+    &:hover { 
+    transform: scale(1.1); 
+    }
+}
+    
+
+.btn{
+
+    width: auto;
+    height: 2.5rem;
+
+    margin: 1rem;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    border: 2px solid var(--black);
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    box-shadow: 1px 1px var(--black);
+
+    &:hover{
+
+        opacity: .97;
+
+    }
+
+
+
+    cursor: pointer;
+    
+    &-primary{
+
+        background-color: var(--primary-color);
+        color: var(--white);
+
+    }
+
+    &-white{
+
+        background-color: var(--white);
+        color: var(--black);
+
+    }
+
+    &-secondary{
+
+        background-color: var(--secondary-color);
+        color: var(--black);
+
+    }
+}
+
 .margin-auto{
 
     margin: auto;

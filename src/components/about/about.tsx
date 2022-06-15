@@ -1,6 +1,8 @@
 
 import React, { FC } from "react";
 
+import ContactForm from "../contactForm/ContactForm";
+
 import "./about.scss";
 
 const ContactMe: FC = () => {
@@ -11,24 +13,35 @@ const ContactMe: FC = () => {
             <div className="margin-auto">
                 <h1 className="aboutme-header">Contact Me</h1>
 
-                <form className="form" action="mailto:martmartez4@gmail.com" method="post" encType="text/plain">
+                <ContactForm></ContactForm>
 
-                    <p className="form-row">
-                        <label id="contact-form-name-label" htmlFor="contact-form-name" className="form-label">Name</label>
-                        <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" className="form-input" />
-                    </p>
 
-                    <p className="form-row">
-                        <label id="contact-form-email-label" htmlFor="contact-form-email" className="form-label">Email</label>
-                        <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" className="form-input" />
-                    </p>
-
-                    <p className="form-row">
-                        <label id="contact-form-message-label" htmlFor="contact-form-message" className="form-label">Messasge</label>
-                        <textarea name="name" id="contact-form-message" aria-labelledby="contact-form-message-label" className="form-input" />
-                    </p>
-                    
-                </form>
+                    {/* <form
+                        action=`https://formspree.io/f/${process.env.GATSBY_FORMSPREE}`
+                        method="POST"
+                        >
+                         <p className="form-row">
+                            <label className="form-label">
+                                Your email:
+                                <input className="form-input" type="email" name="email" placeholder="Your email" />
+                            </label>
+                        </p>
+                         <p className="form-row">
+                            <label className="form-label">
+                                Subject:
+                                <input name="subject" placeholder="Subject" />
+                            </label>
+                        </p>
+                        <p className="form-row">
+                        <label className="form-label">
+                            Your message:
+                            <textarea className="form-input" name="message" placeholder="Message"></textarea>
+                        </label>
+                        </p> */}
+                        {/* <!-- your other form fields go here --> */}
+                        {/* <button className="btn btn-primary grow" type="submit">Send Email</button>
+                        </form> */}
+                
             </div>
             
 
