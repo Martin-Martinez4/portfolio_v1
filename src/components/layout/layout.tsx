@@ -5,10 +5,10 @@ import { Link } from "gatsby";
 
 import "./layout.scss";
 
-import Github from "../../../public/icons/github-svgrepo-com.svg";
-import LinkdIn from "../../../public/icons/linkedin-svgrepo-com.svg";
-import Site from "../../../public/icons/globe-wire-svgrepo-com.svg";
-import Chevron from "../../../public/icons/chevron-svgrepo-com.svg";
+import Github from "../../images/svg/GithubSvg";
+import LinkdIn from "../../images/svg/LinkedinSvg";
+import Site from "../../images/svg/SiteSvg";
+import Chevron from "../../images/svg/ChevronSvg";
 import ChevronSvg from "../../images/svg/ChevronSvg";
 
 
@@ -57,7 +57,10 @@ const Layout: FC<Props> = ({ children }) => {
         <nav className={`nav horizontal-nav ${widerNav ? "wider" : "" } `}>
             <ul className="nav-container-horizontal">
                
-                <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="https://github.com/Martin-Martinez4" ><img src={Github} className="nav-link-horizontal-icon"></img></Link></li>
+                <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}>
+                    <Link to="https://github.com/Martin-Martinez4" >
+                        <Github classes={"nav-link-horizontal-icon"} ></Github>
+                    </Link></li>
                 {/* <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={LinkdIn}></img></Link></li>
                 <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Site}></img></Link></li> */}
                 <li  className={`nav-link-horizontal ${widerNav ? "hidden" : "hidden-min-width-550" }`}>

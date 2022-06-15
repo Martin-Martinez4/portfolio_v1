@@ -1,12 +1,15 @@
 
 import React, { FC } from "react";
 
+import { Link } from 'gatsby';
+
 import "./projects.scss";
 
-import Logor_image from "../../../public/static/Logor_Laptop.png";
+import Logor_image from "../../images/Logor_Laptop-afc8fe22fb5106bf97f8778fff9c6e07.png";
 
-import github_svg from "../../../public/icons/github-svgrepo-com.svg";
-import link_svg from "../../../public/icons/link-svgrepo-com.svg";
+import GithubSvg from "../../images/svg/GithubSvg";
+import linkSvg from "../../images/svg/linkSvg";
+import LinkSvg from "../../images/svg/linkSvg";
 
 const Projects: FC = () => {
 
@@ -27,8 +30,15 @@ const Projects: FC = () => {
                         <h2 className="project-header">Logor</h2>
 
                         <div className="project-links" >
-                            <a className="project-links-link" title="link to github repo" href="https://github.com/Martin-Martinez4/logor"><img  className="project-links-icon" src={github_svg}></img></a>
-                            <a  href="https://logor-frontend.herokuapp.com/" title="link to live site (Heroku)" className="project-links-link"><img className="project-links-icon" src={link_svg}></img></a>
+                            <a className="project-links-link" title="link to github repo" href="https://github.com/Martin-Martinez4/logor">
+                              
+                                <GithubSvg classes={"project-links-icon"}></GithubSvg>
+                            </a>
+                            <a  href="https://logor-frontend.herokuapp.com/" title="link to live site (Heroku)" className="project-links-link">
+                                {/* <img className="project-links-icon" src={link_svg}></img> */}
+                                <LinkSvg classes={"project-links-icon"}></LinkSvg>
+                            </a>
+                                
                         </div>
 
                         <p>
