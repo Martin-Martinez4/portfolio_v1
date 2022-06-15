@@ -32,11 +32,11 @@ const Projects: FC = () => {
                         <div className="project-links" >
                             <a className="project-links-link" title="link to github repo" href="https://github.com/Martin-Martinez4/logor">
                               
-                                <GithubSvg classes={"project-links-icon"}></GithubSvg>
+                                <GithubSvg classes={"project-links-icon grow toTertiary"}></GithubSvg>
                             </a>
                             <a  href="https://logor-frontend.herokuapp.com/" title="link to live site (Heroku)" className="project-links-link">
                                 {/* <img className="project-links-icon" src={link_svg}></img> */}
-                                <LinkSvg classes={"project-links-icon"}></LinkSvg>
+                                <LinkSvg classes={"project-links-icon grow toTertiary"}></LinkSvg>
                             </a>
                                 
                         </div>

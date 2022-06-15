@@ -59,17 +59,18 @@ const Layout: FC<Props> = ({ children }) => {
                
                 <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}>
                     <Link to="https://github.com/Martin-Martinez4" >
-                        <Github classes={"nav-link-horizontal-icon"} ></Github>
-                    </Link></li>
+                        <Github classes={"nav-link-horizontal-icon grow glow"} ></Github>
+                    </Link>
+                </li>
                 {/* <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={LinkdIn}></img></Link></li>
                 <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Site}></img></Link></li> */}
                 <li  className={`nav-link-horizontal ${widerNav ? "hidden" : "hidden-min-width-550" }`}>
                         {/* <img  className="nav-link-horizontal-icon" src={Chevron}></img> */}
-                        <ChevronSvg mode={2} classes={"nav-link-horizontal-icon"} toggleFunciton={() => toggleBoolState(widerNav, setWiderNav)} ></ChevronSvg>
+                        <ChevronSvg mode={2} classes={"nav-link-horizontal-icon pointer toWhite"} toggleFunciton={() => toggleBoolState(widerNav, setWiderNav)} ></ChevronSvg>
                 </li>
                 <li  className={`nav-link-horizontal ${widerNav ? "hidden-min-width-550" : "hidden" }`}>
                         {/* <img  className="nav-link-horizontal-icon" src={Chevron}></img> */}
-                        <ChevronSvg mode={1} classes={"nav-link-horizontal-icon"} toggleFunciton={() => toggleBoolState(widerNav, setWiderNav)} ></ChevronSvg>
+                        <ChevronSvg mode={1} classes={"nav-link-horizontal-icon pointer toWhite"} toggleFunciton={() => toggleBoolState(widerNav, setWiderNav)} ></ChevronSvg>
                 </li>
             </ul>
 

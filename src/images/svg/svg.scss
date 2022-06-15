@@ -4,6 +4,41 @@
     fill: var(--white);
 }
 
+.toWhite { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        fill: var(--white); 
+    }
+}
+
+.toPrimary { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        fill: var(--primary-color); 
+    }
+}
+
+.toSecondary { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        fill: var(--secondary-color); 
+    }
+}
+.toTertiary { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        fill: var(--tertiary-color); 
+    }
+}
+
 .svg{
 
     width: 32px;
@@ -16,6 +51,17 @@
         width: 26px;
         height: 26px;
     }
+}
+
+.round{
+
+    border-radius: 100%;
+
+}
+
+.cta{
+
+    padding: .25rem;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 501px) {
