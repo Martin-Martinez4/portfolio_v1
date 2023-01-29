@@ -5,8 +5,7 @@ import { Link } from 'gatsby';
 
 import "./projects.scss";
 
-import Logor_image from "../../images/Logor_Laptop-afc8fe22fb5106bf97f8778fff9c6e07.png";
-
+import Logor_image from "../../images/Logor_Laptop.png";
 import GithubSvg from "../../images/svg/GithubSvg";
 import linkSvg from "../../images/svg/linkSvg";
 import LinkSvg from "../../images/svg/linkSvg";
@@ -34,7 +33,7 @@ const Projects: FC = () => {
                               
                                 <GithubSvg classes={"project-links-icon grow toTertiary"}></GithubSvg>
                             </a>
-                            <a  href="https://logor-frontend.herokuapp.com/" title="link to live site (Heroku)" className="project-links-link">
+                            <a  href="https://logor.onrender.com/" title="link to live site (Heroku)" className="project-links-link">
                                 {/* <img className="project-links-icon" src={link_svg}></img> */}
                                 <LinkSvg classes={"project-links-icon grow toTertiary"}></LinkSvg>
                             </a>

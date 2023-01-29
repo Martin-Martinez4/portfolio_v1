@@ -61,12 +61,7 @@ const Layout: FC<Props> = ({ children }) => {
                     <Link to="https://github.com/Martin-Martinez4" >
                         <Github classes={"nav-link-horizontal-icon grow glow"} ></Github>
                     </Link>
-                    <Link to="https://github.com/Martin-Martinez4" >
-                        <Github classes={"nav-link-horizontal-icon grow glow"} ></Github>
-                    </Link>
-                    <Link to="https://github.com/Martin-Martinez4" >
-                        <Github classes={"nav-link-horizontal-icon grow glow"} ></Github>
-                    </Link>
+                 
                 </li>
                 {/* <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={LinkdIn}></img></Link></li>
                 <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}><Link to="/about" ><img  className="nav-link-horizontal-icon" src={Site}></img></Link></li> */}
