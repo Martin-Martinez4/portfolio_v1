@@ -33,7 +33,7 @@ const Projects: FC = () => {
                               
                                 <GithubSvg classes={"project-links-icon grow toTertiary"}></GithubSvg>
                             </a>
-                            <a  href="https://logor.onrender.com/" title="link to live site (Heroku)" className="project-links-link">
+                            <a  href="https://logor.onrender.com/" title="link to live site" className="project-links-link">
                                 {/* <img className="project-links-icon" src={link_svg}></img> */}
                                 <LinkSvg classes={"project-links-icon grow toTertiary"}></LinkSvg>
                             </a>
