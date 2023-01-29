@@ -22,7 +22,7 @@ const Projects: FC = () => {
 
                     <div className="project-images-container">
 
-                    <img className="project-image" src={Logor_image} ></img>
+                        <img className="project-image" src={Logor_image} ></img>
                     </div>
 
                     <div className="project-text">
@@ -47,16 +47,16 @@ const Projects: FC = () => {
 
                         <p className="project-bullets-header">Frontend:</p>  
                             <p>Technologies: React, Typescript</p>
-                        <ul className="project-bullets">
-                            <li>Features:
+                        <div className="project-bullets">
+                            <div>Features:
                                 <div className="features-container">
                                     <p>HTTP only JWt token based Authentication</p>
                                     <p>Users can create, update, and delete thier own posts</p>
                                     <p>Users can like and respond to other user's posts</p>
                                     <p>Users can edit their own profiles</p>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
 
                         <p className="project-bullets-header">Backend:</p>    
                             <p>Technologies: Node, Express, Knex, PSQL, Mullter</p>

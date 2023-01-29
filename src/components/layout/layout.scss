@@ -4,11 +4,6 @@
 
     @media screen and (max-width: 450px) {
 
-        // :root{
-
-        //     --nav-height: 8vh;
-        // }
-        
         --nav-height: 10vh;
     }
 
@@ -71,7 +66,8 @@ html{
     height: 100%;
     margin-bottom: 1px;
     overflow-x: hidden;
- }
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -83,7 +79,6 @@ body {
 
     overflow-x: hidden;
 
-    // background-color: var(--primary-color-lightest);
 }
 ol, ul {
 	list-style: none;
@@ -210,10 +205,10 @@ table {
     margin-left: var(--nav-width);
     padding-right: 1rem;
     box-sizing: border-box;
-    // background-color: var(--secondary-color);
+
     background-color: var(--secondary-color);
-    // background-color: var(--black);
-    justify-content: end;
+
+    justify-content: flex-end;
     position: fixed;
     z-index: 1;
 
@@ -223,15 +218,11 @@ table {
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    // background-color: var(--secondary-color);
-    // background-color: var(--secondary-color);
+    justify-content: flex-end;
+
     background-color: var(--secondary-color-light);
-    // height: calc(100vh - var(--nav-height));
     height: calc(100vh);
     width: var(--nav-width);
-
-    // margin-top: var(--nav-height);
 
 
     position: fixed;
@@ -241,16 +232,12 @@ table {
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    // background-color: var(--secondary-color);
-    // background-color: var(--secondary-color);
+    justify-content: flex-end;
+
     background-color: var(--secondary-color-light);
     z-index: 1;
-    // height: calc(100vh - var(--nav-height));
     height: calc(100vh);
     width: calc(var(--nav-width) + 1rem);
-
-    // margin-top: var(--nav-height);
 
 
     position: fixed;
@@ -274,20 +261,11 @@ table {
 }
 
 
-// @media screen and (max-width: 550px) {
-//     .horizontal-nav{
-
-//         display: none;
-        
-//     }
-// }
-
 .bottom-nav{
 
     background-color: var(--black);
 
     height: auto;
-    // margin-top: .1rem;
     width: calc(100vw - var(--nav-width));
 
     text-align: center;
