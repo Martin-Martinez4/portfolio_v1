@@ -1,7 +1,5 @@
 
 
-
-
 import React, { FC } from "react";
 
 import "./svg.scss";
@@ -23,9 +21,6 @@ const ChevronSvg: FC<SvgProps> = ({ classes, toggleFunciton, mode }) => {
     return(
 
         <>
-
-        {console.log(Mode[mode])}
-
         { Mode[mode] === "One" ?
                 <svg version="1.1" id="Layer_1"  className={`svg ${classes? classes : ""}`}  onClick={(e => toggleFunciton? toggleFunciton() : "")} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 viewBox="0 0 511.999 511.999">
@@ -44,7 +39,7 @@ const ChevronSvg: FC<SvgProps> = ({ classes, toggleFunciton, mode }) => {
 
             </svg>
                 :
-                "test" 
+                "" 
         }
 
 

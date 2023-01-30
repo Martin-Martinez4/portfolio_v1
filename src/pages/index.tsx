@@ -1,7 +1,7 @@
 
 import React, { FC, useState } from "react";
 
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 
 import Layout from "../components/layout/layout";
 
@@ -24,6 +24,29 @@ import "./index.scss";
 
 // markup
 const IndexPage: FC = () => {
+
+  const {projects} = useStaticQuery(
+    graphql`{projects: allProjectsJson 
+        {
+            edges {
+                node {
+                    id
+                    project_name
+                    description
+                    repo_site
+                    live_site
+                    image_Url
+                    highlights {
+                    features
+                    tagline
+                    title
+                    }
+                }
+            }
+        }
+    }`
+  )
+
 
   return (
 
@@ -48,8 +71,7 @@ const IndexPage: FC = () => {
        
         <div className="section">
 
-          <Projects></Projects>
-
+          <Projects projects={projects.edges}></Projects>
 
         </div>
        

@@ -96,6 +96,10 @@ table {
 	border-spacing: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav{
 
     height: var(--nav-height);
@@ -228,6 +232,7 @@ table {
     position: fixed;
 
 }
+
 .horizontal-nav.wider{
 
     display: flex;
@@ -264,18 +269,46 @@ table {
 .bottom-nav{
 
     background-color: var(--black);
-
     height: auto;
     width: calc(100vw - var(--nav-width));
-
     text-align: center;
-
     display: flex;
 
     
  
 }
+ 
 
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.fadeOutUp {
+    animation-name: fadeOutUp;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.stretchWidth {
+    animation-name: stretchWidth;
+    animation-duration: .75s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.widthEaseInOut{
+    transition: width 1s ease-in-out;
+
+}
+
+.zIndex10{
+    z-index: 10;
+}
+  
 .hidden{
 
     display: none;
@@ -286,8 +319,8 @@ table {
 
             display: none;
 
-            
         }
+
         @media screen and (max-width: 550px) {
             &-550{
     
@@ -299,3 +332,89 @@ table {
 
 }
 
+@keyframes fade {
+    0%  {opacity: 1;}
+    10%  {opacity: .9;}
+    25% {opacity: .5;}
+    75% {opacity: .25;}
+    100% {opacity: 0;}
+}
+
+
+@keyframes fadeOutUp {
+     0% {
+         transform: translateY(0);
+     }
+     60% {
+         transform: translateY(-15px);
+     }
+     80% {
+         opacity: 1;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 0;
+       transform: translateY(-30px);
+
+       
+    }
+} 
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    
+    }
+    60% {
+        opacity: .25;
+        transform: translateY(-20px);
+    }
+    80% {
+        opacity: .75;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes stretchWidth {
+    0% {
+        transform: scale(.8, 1);
+    
+    }
+    20% {
+        transform: scale(.9, 1);
+    }
+    40% {
+        transform: scale(1.2, 1);
+    }
+    60% {
+        transform: scale(1.1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+   
+}
+@keyframes stretchHeight {
+    0% {
+        transform: scale(1, 1.1);
+    
+    }
+    20% {
+        transform: scale(1, 1.15);
+    }
+    40% {
+        transform: scale(1, 1.2);
+    }
+    60% {
+        transform: scale(1, 1.15);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+   
+}

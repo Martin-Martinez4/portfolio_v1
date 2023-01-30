@@ -1,0 +1,50 @@
+[
+    {
+        "project_name": "Logor",
+        "image_Url": "Logor_Laptop.png",
+        "description": "A mock fullstack social media site.  Made using the PERN (Postgres, Express, React, Node) stack",
+        "live_site":"https://logor.onrender.com/",
+        "repo_site":"https://github.com/Martin-Martinez4/logor",
+        "highlights":[
+                {
+                    "title": "Frontend",
+                    "tagline":"Technologies: React, Typescript",
+                    "features": [
+                        "HTTP only JWt token based Authentication.", 
+                        "Create, update, and delete posts.",
+                        "Like and respond to other user's posts.",
+                        "Like and respond to other user's posts.",
+                        "Edit your profile."
+                    ]
+                },
+                {
+                    "title": "Backend",
+                    "tagline":"Technologies: Node, Express, Knex, PSQL, Mullter",
+                    "features": [
+                        "JWT Authentication refresh token sent as a HTTP Only cookie.", 
+                        "MVC file structure",
+                        "Handle file uploads with Multer.",
+                        "Passwords are encrypted before being stored.",
+                        "Uses helmetJs and cors middlewares to set security headers and only allow requests from the frontend."
+                    ]
+                }
+
+        ]
+    },
+    {
+        "project_name": "Jottings",
+        "image_Url": "",
+        "description": "A kanban-style list making application, created using the MERN Postgres, Express, React, Node) stack",
+        "live_site": "",
+        "repo_site":"",
+        "features":{
+            "title": "Frontend",
+            "tagline":"Technologies: React, Typescript",
+            "features": [
+                "sdasd", 
+                "asadsd"
+            ]
+        }
+    }
+   
+]
