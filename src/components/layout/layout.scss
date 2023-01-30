@@ -218,6 +218,22 @@ html {
 
 }
 
+.top-nav2{
+
+    display: flex;
+    width: calc(100vw - var(--nav-width));
+    margin-left: var(--nav-width);
+    padding-right: 1rem;
+    box-sizing: border-box;
+
+    background-color: var(--secondary-color);
+    position:absolute;
+
+    justify-content: flex-end;
+    z-index: 1;
+
+}
+
 .horizontal-nav{
 
     display: flex;

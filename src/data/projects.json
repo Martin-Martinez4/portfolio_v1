@@ -13,7 +13,8 @@
                         "HTTP only JWt token based Authentication.", 
                         "Create, update, and delete posts.",
                         "Like and respond to other user's posts.",
-                        "Like and respond to other user's posts.",
+                        "Follow other users.",
+                        "Search for users and tags.",
                         "Edit your profile."
                     ]
                 },
@@ -25,7 +26,7 @@
                         "MVC file structure",
                         "Handle file uploads with Multer.",
                         "Passwords are encrypted before being stored.",
-                        "Uses helmetJs and cors middlewares to set security headers and only allow requests from the frontend."
+                        "Uses helmetJs and cors middleware to set security headers and only allow requests from the frontend."
                     ]
                 }
 
@@ -33,18 +34,34 @@
     },
     {
         "project_name": "Jottings",
-        "image_Url": "",
-        "description": "A kanban-style list making application, created using the MERN Postgres, Express, React, Node) stack",
-        "live_site": "",
-        "repo_site":"",
-        "features":{
-            "title": "Frontend",
-            "tagline":"Technologies: React, Typescript",
-            "features": [
-                "sdasd", 
-                "asadsd"
-            ]
-        }
+        "image_Url": "Jottings_Projects_View.jpeg",
+        "description": "A Kanban-style list making application, created using the MERN (Postgres, Express, React, Node) stack",
+        "live_site": "https://jottings-frontend.onrender.com/",
+        "repo_site":"https://github.com/Martin-Martinez4/jottings",
+        "highlights":[
+            {
+                "title": "Frontend",
+                "tagline":"Technologies: React, Redux, Sagas, Typescript",
+                "features": [
+                    "Create, read, update, and delete tasks.", 
+                    "Style tasks using markdown.",
+                    "Oragnize tasks inside of categories. Organize categories inside of projects",
+                    "Tasks and categories can be reordered via drag and drop or a menu interface.",
+                    "JWT Authentication."
+                ]
+            },
+            {
+                "title": "Backend",
+                "tagline":"Technologies: Node, Express, MongoDB, Mongoose",
+                "features": [
+                    "MVC file structure",
+                    "NoSql MongoDb database.",
+                    "Sends error messages to frontend to inform users when an error was encountered and handled.",
+                    "Security middleware and cors protection."
+                ]
+            }
+        ]
+        
     }
    
 ]

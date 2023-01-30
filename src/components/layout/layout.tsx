@@ -32,6 +32,7 @@ const Layout: FC<Props> = ({ children }) => {
 
     return(
         <>
+            <span className='nav top-nav2'></span>
             <TopNav />
             <LeftNav />
             <main className="main-container">

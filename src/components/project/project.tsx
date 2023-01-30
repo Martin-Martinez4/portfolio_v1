@@ -28,7 +28,7 @@ const Project: FC<any> = (project) =>{
     console.log(image_Url)
 
     return(
-        <div className="project-container">
+        <div id="projects" className="project-container">
 
             <div className="project-image-container">
             {
@@ -63,7 +63,6 @@ const Project: FC<any> = (project) =>{
                         ""
                         :
                         <a  href={live_site} title="link to live site" className="project-links-link">
-                            {/* <img className="project-links-icon" src={link_svg}></img> */}
                             <LinkSvg classes={"project-links-icon grow toTertiary"}></LinkSvg>
                         </a>
                     }
