@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[49],{2766:function(e,t,l){l.r(t);var n=l(7294),u=l(1883);t.default=()=>n.createElement("main",null,n.createElement("title",null,"About Me"),n.createElement(u.Link,{to:"/"},"Home"),n.createElement("h1",null,"About"),n.createElement("p",null,"About"))}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-04132a0aef9b0aee09f7.js.map
