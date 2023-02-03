@@ -1,5 +1,5 @@
 
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 
 import { graphql, Link, useStaticQuery } from "gatsby";
 
@@ -9,10 +9,10 @@ import AboutMe from "../components/about/about";
 
 import Projects from "../components/projects/projects";
 
+import Techbadge from "../components/techbadge/techbadge";
+
 import GithubSvg from "../images/svg/GithubSvg";
-import LinkedinSvg from "../images/svg/LinkedinSvg";
-import SiteSvg from "../images/svg/SiteSvg";
-import ChevronSvg from "../images/svg/ChevronSvg";
+
 
 // styles
 const pageStyles = {
@@ -21,6 +21,7 @@ const pageStyles = {
 }
 
 import "./index.scss";
+import "./aimations.scss";
 
 // markup
 const IndexPage: FC = () => {
@@ -36,11 +37,11 @@ const IndexPage: FC = () => {
                     repo_site
                     live_site
                     image_Url
-                    highlights {
-                    features
-                    tagline
-                    title
-                    }
+                    # highlights {
+                    # features
+                    # tagline
+                    # title
+                    # }
                 }
             }
         }
@@ -58,22 +59,29 @@ const IndexPage: FC = () => {
 
           <div className="hero-text">
             <h1 className="biggest" >Hello, I am Martin Martinez</h1>
-            <h2 className="bigger" >I develop web apps and create web sites</h2>
-
-            {/* <p>A professional summary stating your best-selling points based on the job description e.g. I am a Software Engineer with strong fundamentals in XXX looking to XXXX.</p> */}
-            <p>I am a web developer with strong fundamentals in the React, Node, JavaScript, and CSS looking to create websites and apps that are performant and user-friendly.  </p>
-
-
+              <h4 className="wordCarousel">
+                  <span className="bigger">I create websites and apps using: </span>
+                  <div>
+                    
+                      <ul className="flip5">
+                          <li className="big">React</li>
+                          <li className="big">CSS</li>
+                          <li className="big">JavaScript</li>
+                          <li className="big">Postgres</li>
+                          <li className="big">NodeJS</li>
+                      </ul>
+                  </div>
+              </h4>
+              
           </div>
-
-
+        
         </div>
-       
-        <div className="section">
 
+        <div className="section">
           <Projects projects={projects.edges}></Projects>
 
         </div>
+       
        
         <div className="section-60">
 
@@ -83,6 +91,7 @@ const IndexPage: FC = () => {
 
           </div>
 
+   
 
         </div>
        
@@ -96,7 +105,7 @@ const IndexPage: FC = () => {
         <GithubSvg classes="white svg-medium"></GithubSvg> 
       </Link>
       </li>
-      <li>Copyright © 2022 Martin Martinez</li>
+      <li>Copyright © {new Date().getFullYear()} Martin Martinez</li>
   </ul>
 </nav>
       </main>

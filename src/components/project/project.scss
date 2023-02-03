@@ -1,0 +1,140 @@
+
+
+.project{
+
+    &-header{
+
+        font-size: 2rem;
+        font-weight: bold;
+
+        color: var(--secondary-color)
+    }
+
+    &-container{
+
+        width: calc(90vw - var(--nav-width));
+
+        margin: 4rem .5rem 2rem .5rem;
+
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    @media screen and (max-width: 1200px) {
+        &-container{
+
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+
+
+    &-image{
+
+        box-shadow: 1px 1px 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        
+        text-align: center;
+
+
+        &-container{
+            
+            text-align: center;
+            height: fit-content;
+            width: 40rem;
+
+        }
+
+    }
+
+
+    @media screen and (max-width: 1200px) {
+        &-image{
+            width: calc(70vw - var(--nav-width));
+            height: auto;
+            
+            text-align: center;
+            margin-top: 1rem;
+
+            &-container{
+                width: 100%
+             }
+        }
+    }
+
+
+    &-text{
+
+        width: calc(80% - 30rem);
+
+        margin: .5rem;
+        margin-left: 2rem;
+
+        font-size: 1.2rem;
+
+        text-align: left;
+        
+    }
+
+    @media screen and (max-width: 1200px) {
+        &-text{
+            width: calc(90vw - var(--nav-width));
+            height: 20rem;
+            height: auto;
+            text-align: center;
+
+    
+            margin-left: var(--nav-width);
+            margin-right: .5rem;
+        }
+    }
+
+    &-links{      
+
+        &-icon{
+
+            width: 20px;
+            height: 20px;
+
+            margin: .25rem;
+    
+        }
+    }
+}
+
+.project-bullets{
+    list-style: square;
+
+    text-align: left;
+
+    &-header{
+
+        color: var(--black);
+        font-weight: bold;
+
+        margin-top: 1rem;
+        
+
+    }
+}
+
+.features-container{
+
+    padding-left: 2rem;
+
+}
+
+
+.margin-left-zero{
+
+    margin-left: 0;
+}
+
+
+
+
+

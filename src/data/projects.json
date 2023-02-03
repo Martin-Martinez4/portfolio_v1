@@ -10,7 +10,7 @@
                     "title": "Frontend",
                     "tagline":"Technologies: React, Typescript",
                     "features": [
-                        "HTTP only JWt token based Authentication.", 
+                        "HTTP only JWT based Authentication.", 
                         "Create, update, and delete posts.",
                         "Like and respond to other user's posts.",
                         "Follow other users.",

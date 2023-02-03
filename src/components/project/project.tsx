@@ -1,51 +1,37 @@
 
-import { features } from "process";
 import React, {FC} from "react";
 import GithubSvg from "../../images/svg/GithubSvg";
 import LinkSvg from "../../images/svg/linkSvg";
 
-type highlight = {
-
-    title: string,
-    features: string[],
-    tagline: string,
-}
+import "./project.scss";
 
 type project = {
+    id: string,
     project_name: string,
     description: string,
     image_Url: string,
     repo_site: string,
     live_site: string,
-    highlights: highlight[]
 
 }
 
-const Project: FC<any> = (project) =>{
-
+const Project: FC<{project: project}> = ({ project }) =>{
     
-    const {project_name, description, image_Url, repo_site, live_site, highlights} = project.project;
-    console.log(image_Url)
+    const {id, project_name, description, image_Url, repo_site, live_site } = project;
 
     return(
-        <div id="projects" className="project-container">
-
-            <div className="project-image-container">
-            {
-                !image_Url
-                ?
-                <div className="project-image" style={{boxShadow: "none"}}></div>
-                :
-                <img className="project-image" src={image_Url} ></img>
-            }
-
-            </div>
+        <div className="project-container">
 
             <div className="project-text">
-                <>
+                {/* <h2 className="project-header">{project_name}</h2> */}
                 <h2 className="project-header">{project_name}</h2>
-
+                
+                <p>
+                    {description}
+                </p>
+           
                 <div className="project-links" >
+                   
                     {
                        !repo_site
                         ? 
@@ -68,38 +54,11 @@ const Project: FC<any> = (project) =>{
                     }
                         
                 </div>
-
-                <p>
-                    {description}
-                </p>
-
-                {/* Can make into a new component */}
-                {
-                    !highlights
-                    ?
-                    ""
-                    :
-                highlights?.map((section: highlight) => {
-                    return(<>
-                        <p className="project-bullets-header">{section.title}</p>  
-                            <p>{section.tagline}</p>
-                        <div className="project-bullets">
-                            <div>Features:
-                                <div className="features-container">
-                                        {
-                                        section?.features.map(feature => {
-                                            return (<p>{feature}</p>)
-                                        })}
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </>)
-                })
-            }
-
              
-                </>
+            </div>
+            <div className="project-image-container">
+
+                <img className="project-image" src={image_Url} ></img>
             </div>
         </div>
 

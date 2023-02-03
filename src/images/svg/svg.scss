@@ -3,6 +3,14 @@
 
     fill: var(--white);
 }
+.toGrey { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        color: var(--grey); 
+    }
+}
 
 .toWhite { 
     // transition: fill 0.3s;
@@ -10,6 +18,23 @@
 
     &:hover { 
         fill: var(--white); 
+    }
+}
+
+.toBlack { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        fill: var(--black); 
+    }
+}
+.toBlackColor { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        color: var(--black); 
     }
 }
 
@@ -21,6 +46,14 @@
         fill: var(--primary-color); 
     }
 }
+.toPrimaryColor { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        color: var(--primary-color); 
+    }
+}
 
 .toSecondary { 
     // transition: fill 0.3s;
@@ -30,12 +63,29 @@
         fill: var(--secondary-color); 
     }
 }
+.toSecondaryColor { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        color: var(--secondary-color); 
+    }
+}
 .toTertiary { 
     // transition: fill 0.3s;
     transition:fill 0.75s ease 0.2s;
 
     &:hover { 
         fill: var(--tertiary-color); 
+    }
+}
+
+.toTertiaryColor { 
+    // transition: fill 0.3s;
+    transition:fill 0.75s ease 0.2s;
+
+    &:hover { 
+        color: var(--tertiary-color); 
     }
 }
 

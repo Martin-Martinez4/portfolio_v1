@@ -21,8 +21,8 @@ const TopNav = () => {
         <ul className={`nav-container`}>
          
             {/* <li  className="nav-link"><Link to="/about" >About</Link></li> */}
-            <li  className="nav-link"><a href="#projects" >Projects</a></li>
-            <li  className="nav-link"><a href="#contactMe" >Contact</a></li>
+            <li  className="nav-link"><a className="glow" href="#projects" >Projects</a></li>
+            <li  className="nav-link"><a className="glow" href="#contactMe" >Contact</a></li>
         </ul>
     </nav>
 

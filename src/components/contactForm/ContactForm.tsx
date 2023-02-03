@@ -12,7 +12,7 @@ const  ContactForm= () =>  {
         <p className="form-row">
 
             <label className="form-label" htmlFor="email">
-                Email Address
+                Email Address:
             </label>
             <input
                 className="form-input"

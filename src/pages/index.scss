@@ -1,4 +1,15 @@
 
+
+.overflowHidden{
+    overflow: hidden;
+}
+
+@font-face { 
+    font-family: lato-regular; 
+    src: url('../../static/Lato-Regular.ttf'); 
+} 
+
+
 .grow { 
     transition: all .2s ease-in-out; 
 
@@ -94,9 +105,7 @@ h1.biggest{
 }
 .bigger{
 
-    // color: var( --primary-color-lightest);
     color: var( --white);
-    margin-left: 2rem;
     font-size: 2rem;
     line-height: 2.5rem;
 }
@@ -121,9 +130,8 @@ h1.biggest{
 
     box-sizing: border-box;
     
-    background-image: linear-gradient(rgba(33, 35, 51, .8), rgba(15, 13, 22, .65)), url("../images//Code_cartoonfilter.png");
-    // background-image: linear-gradient(#48beb3, #32292f);
-    // background-image: linear-gradient(rgba(64, 52, 83, .90), #48beb3);
+    background-image: linear-gradient(rgba(33, 35, 51, .8), rgba(5, 32, 44, 0.65)), url("../images//Code_cartoonfilter.png");
+  
 
       /* Set a specific height */
   height: calc(100vh - var(--nav-height));
@@ -142,10 +150,10 @@ h1.biggest{
 
 .hero-text {
     width: 70vw;
-    text-align: center;
+    // text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 45%;
     transform: translate(-50%, -50%);
     color: white;
 
@@ -156,7 +164,7 @@ h1.biggest{
 
     h1.biggest{
 
-        color: var( --primary-color-lightest);
+        color: var(--primary-color-lightest);
         font-size: 2.25rem;
       
     }
@@ -194,7 +202,6 @@ h1.biggest{
     }
     .bigger{
     
-        // color: var( --primary-color-lightest);
         color: var( --white);
         margin-left: 0rem;
         margin-bottom: .5rem;
@@ -205,8 +212,12 @@ h1.biggest{
 
 .main-content{
 
+    // SVG background
     margin-top: var(--nav-height);
     margin-left: var(--nav-width);
+    background-color: var(--white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2348beb3' fill-opacity='0.08'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
 
 }
 
@@ -221,8 +232,6 @@ input{
     border: 2px solid var(--primary-color);
     border-radius: 4px;
     box-sizing: border-box;
-
-    // background-color: var(--secondary-color-lightest);
 
     &:focus, &:active{
 
@@ -250,7 +259,6 @@ textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
-    border-radius: 20px;
     margin-top: .5rem;
     box-sizing: border-box;
     border: 2px solid var(--primary-color);
@@ -272,16 +280,14 @@ textarea {
 
         font-size: 1rem;
     
-        width: 100%;
+        width: 90%;
         padding: 5px 10px;
         margin: 8px 0;
     
         border: 2px solid var(--primary-color);
         border-radius: 4px;
         box-sizing: border-box;
-    
-        // background-color: var(--secondary-color-lightest);
-    
+        
         &:focus, &:active{
     
             outline: 2px solid var(--tertiary-color);
@@ -293,7 +299,7 @@ textarea {
     
     .form-label {
     
-        text-align: left;
+        text-align: center;
         float: left;
         width: 100%;
     
@@ -305,7 +311,7 @@ textarea {
     
         font-size: 1rem;
     
-        width: 100%;
+        width: 90%;
         height: 150px;
         padding: 5px 10px;
         border-radius: 20px;
@@ -332,5 +338,7 @@ textarea {
 
     margin: .2rem;
 }
+
+
 
 

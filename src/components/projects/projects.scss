@@ -8,12 +8,11 @@
         
         
         color: var(--black);
-        margin: 1rem;
 
         box-sizing: border-box;
 
         min-height: 90vh;
-        width: calc(97vw - var(--nav-width));
+        width: calc(90vw - var(--nav-width));
 
         margin: auto;
 
@@ -59,114 +58,6 @@
     justify-content: center;
 }
 
-.project{
-
-    &-header{
-
-        font-size: 2rem;
-        font-weight: bold;
-
-        color: var(--secondary-color)
-    }
-
-    @media screen and (max-width: 1200px) {
-        &-container{
-
-            flex-direction: column-reverse;
-        }
-    }
-
-    &-container{
-
-        width: calc(100vw - var(--nav-width));
-
-        margin: 2rem .5rem 2rem .5rem;
-
-        display: flex;
-    }
-
-    &-image{
-
-        box-shadow: 1px 1px 4px;
-        box-sizing: border-box;
-        width: 50rem;
-        height: 25rem;
-
-        margin-left: .5rem;
-        margin-right: 1rem;
-        text-align: center;
-
-        &-container{
-            
-            text-align: center;
-
-        }
-
-    }
-
-    @media screen and (max-width: 1200px) {
-        &-image{
-            width: calc(70vw - var(--nav-width));
-            height: auto;
-    
-            margin-left: .5rem;
-            margin-right: .5rem;
-
-            text-align: center;
-        }
-    }
-
-
-    &-text{
-
-        width: calc(90% - 50rem);
-
-        margin: .5rem;
-
-        font-size: 1.2rem;
-
-        text-align: center;
-        
-    }
-
-    @media screen and (max-width: 1200px) {
-        &-text{
-            width: calc(90vw - var(--nav-width));
-            height: 20rem;
-            height: auto;
-    
-            margin-left: var(--nav-width);
-            margin-right: .5rem;
-        }
-    }
-
-    &-links{
-        &-icon{
-
-            width: 20px;
-            height: 20px;
-
-            margin: 0 .25rem 0 .25rem;
-    
-        }
-    }
-}
-
-.project-bullets{
-    list-style: square;
-
-    text-align: left;
-
-    &-header{
-
-        color: var(--black);
-        font-weight: bold;
-
-        margin-top: 1rem;
-        
-
-    }
-}
 
 .features-container{
 

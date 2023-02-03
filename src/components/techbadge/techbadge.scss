@@ -1,0 +1,19 @@
+.badge {
+
+    width: 60px;
+    height: 35px;
+
+    color: var(--secondary-color-lightest);
+    text-align: center;
+    line-height: 30px;
+
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    background: var(--black);
+    opacity: .85;
+
+    margin: auto;
+
+}

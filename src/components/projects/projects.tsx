@@ -1,47 +1,47 @@
 
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import Project from "../project/project";
-
 import "./projects.scss";
 
-import Logor_image from "../../images/Logor_Laptop.png";
-import GithubSvg from "../../images/svg/GithubSvg";
-import LinkSvg from "../../images/svg/linkSvg";
+// type highlight = {
 
-type highlight = {
-
-    title: string,
-    features: string[],
-    tagline: string,
-}
+//     title: string,
+//     features: string[],
+//     tagline: string,
+// }
 
 type project = {
+    id: string,
     project_name: string,
     description: string
     image_Url: string,
     repo_site: string,
     live_site: string,
-    highlights: highlight[]
+
+}
+
+type node = {
+
+    node: project
 
 }
 
 type projectsnode = {
-    node: project
+    projects: node[]
 }
 
 
-const Projects: FC<any> = (nodes) => {
+const Projects: FC<projectsnode> = (nodes) => {
     
     const projects = nodes.projects
 
-
     return (
-        <>
+        <div id="projects" className="projects-container">
             {
-               projects.map(project => <Project project ={project.node}></Project>)
+               projects.map(project => <Project key={project.node.id} project={project.node}></Project>)
             }
         
-        </>
+        </div>
     )
 }
 

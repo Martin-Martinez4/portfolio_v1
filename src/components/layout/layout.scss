@@ -9,6 +9,7 @@
 
     --nav-width: 4.5vw;
 
+    // #f0fafad9
     --white: rgb(240, 250, 250);
     --black: rgb(16, 22, 22);
     --grey: rgb(36, 42, 42);
@@ -17,19 +18,22 @@
     --primary-color: #48beb3;
     --primary-color-light: rgba(83, 201, 190, 1);
     --primary-color-lighter: rgba(94, 212, 201, .95);
+    // #69dfd4f2
     --primary-color-lightest: rgba(105, 223, 212, .95);
     
     
     // --secondary-color: #32292f;
-    --secondary-color-dark: rgba(53, 124, 181, 1);
+    --secondary-color-darker: hsl(204,60%, 25%);
+    --secondary-color-dark: hsl(204,60%, 45%);
+    //hsl(204,48%,51%2
     --secondary-color: #488fbe;
-    --secondary-color-light: rgba(83, 154, 201, 1);
-    --secondary-color-lightest:rgba(94, 165, 212, .95);
+    --secondary-color-light: hsl(204,48%, 50%);
+    --secondary-color-lightest: hsl(204,48%, 70%);
     
     // --tertiary-color: #403453;
     --tertiary-color: #48be77;
     --tertiary-color-light: rgba(64, 52, 83, .90);
-    --secondary-color-lightest:rgba(64, 52, 83, .5);
+    --tertiary-color-lightest:rgba(64, 52, 83, .5);
 
     box-sizing: border-box;
 
@@ -51,12 +55,13 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 95%;
 	font: inherit;
 	vertical-align: baseline;
     box-sizing: border-box;
 
     overflow-x: hidden;
+    font-family: lato-regular, sans-serif
 
 
     
@@ -79,6 +84,7 @@ body {
 
     overflow-x: hidden;
 
+
 }
 ol, ul {
 	list-style: none;
@@ -98,6 +104,7 @@ table {
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 .nav{
@@ -197,6 +204,7 @@ html {
 
     height: auto;
     background-color: var(--white);
+
 
     display: flex;
     flex-direction: column;
