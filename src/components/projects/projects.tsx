@@ -17,6 +17,7 @@ type project = {
     image_Url: string,
     repo_site: string,
     live_site: string,
+    tech: string[],
 
 }
 

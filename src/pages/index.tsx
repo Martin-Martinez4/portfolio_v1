@@ -5,7 +5,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 
 import Layout from "../components/layout/layout";
 
-import AboutMe from "../components/about/about";
+import AboutMe from "../components/about/contact";
 
 import Projects from "../components/projects/projects";
 
@@ -22,6 +22,8 @@ const pageStyles = {
 
 import "./index.scss";
 import "./aimations.scss";
+import "./setup.scss";
+import "./utilityclasses.scss";
 
 // markup
 const IndexPage: FC = () => {
@@ -37,6 +39,7 @@ const IndexPage: FC = () => {
                     repo_site
                     live_site
                     image_Url
+                    tech
                     # highlights {
                     # features
                     # tagline

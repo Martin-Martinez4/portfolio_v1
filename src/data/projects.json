@@ -5,6 +5,7 @@
         "description": "A mock fullstack social media site.  Made using the PERN (Postgres, Express, React, Node) stack",
         "live_site":"https://logor.onrender.com/",
         "repo_site":"https://github.com/Martin-Martinez4/logor",
+        "tech": ["React", "NodeJS", "Express", "PostgreSQL"],
         "highlights":[
                 {
                     "title": "Frontend",
@@ -38,6 +39,8 @@
         "description": "A Kanban-style list making application, created using the MERN (Postgres, Express, React, Node) stack",
         "live_site": "https://jottings-frontend.onrender.com/",
         "repo_site":"https://github.com/Martin-Martinez4/jottings",
+        "tech": ["React", "NodeJS", "Express", "MongoDB"],
+
         "highlights":[
             {
                 "title": "Frontend",

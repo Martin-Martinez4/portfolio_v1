@@ -1,11 +1,14 @@
 .badge {
 
-    width: 60px;
-    height: 35px;
+    width: fit-content;
+    height: 40px;
+    padding: 1px;
+    overflow: hidden;
 
     color: var(--secondary-color-lightest);
-    text-align: center;
-    line-height: 30px;
+    text-align: baseline;
+    font-size: .825rem;
+    line-height: 35px;
 
     border: 1px solid var(--black);
     box-sizing: border-box;
@@ -14,6 +17,13 @@
     background: var(--black);
     opacity: .85;
 
-    margin: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &-text{
+        margin: auto;
+        padding: 0 10px 0 10px;
+    }
+    
 
 }

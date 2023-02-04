@@ -3,17 +3,20 @@ import "./techbadge.scss"
 
 type Props = {
 
+    title: string
     classes?: string;
 }
 
-const Techbadge: FC<Props>= ({ classes }) => {
+const Techbadge: FC<Props>= ({ title, classes }) => {
 
     return (
+        <>
         <div className={`badge ${classes? classes: ""}`}>
-            <span>
-                Title
-            </span>
+            <p className="badge-text">
+                {title}
+            </p>
         </div>
+        </>
     )
 }
 

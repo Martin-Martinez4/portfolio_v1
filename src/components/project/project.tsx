@@ -2,6 +2,7 @@
 import React, {FC} from "react";
 import GithubSvg from "../../images/svg/GithubSvg";
 import LinkSvg from "../../images/svg/linkSvg";
+import Techbadge from "../techbadge/techbadge";
 
 import "./project.scss";
 
@@ -12,12 +13,13 @@ type project = {
     image_Url: string,
     repo_site: string,
     live_site: string,
+    tech: string[],
 
 }
 
 const Project: FC<{project: project}> = ({ project }) =>{
     
-    const {id, project_name, description, image_Url, repo_site, live_site } = project;
+    const {id, project_name, description, image_Url, repo_site, live_site, tech } = project;
 
     return(
         <div className="project-container">
@@ -53,6 +55,16 @@ const Project: FC<{project: project}> = ({ project }) =>{
                         </a>
                     }
                         
+                </div>
+                <div className="project-badge-container">
+                    {
+                        tech.map(title => {
+                            return(
+
+                                <Techbadge key={`${id}-{title}`} title={title}></Techbadge>
+                            )
+                        })
+                    }
                 </div>
              
             </div>
