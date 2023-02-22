@@ -19,7 +19,7 @@ const LeftNav = () => {
 
     return(
 
-        <nav className={`zIndex10 nav horizontal-nav ${widerNav ? "stretchWidth wider" : "widthEaseInOut" } `}>
+        <nav className={`zIndex10 nav horizontal-nav shadow ${widerNav ? "stretchWidth wider" : "widthEaseInOut" } `}>
             <ul className="nav-container-horizontal">
             
                 <li  className={`nav-link-horizontal ${widerNav ? "" : "width-550-hidden" }`}>

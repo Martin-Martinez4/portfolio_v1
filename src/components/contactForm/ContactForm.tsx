@@ -44,10 +44,9 @@ const  ContactForm= () =>  {
         <p className="form-row">
 
         <label className="form-label">
-                            Your message:
+                            Your Message:
 
             <textarea
-                className="form-input"
                 id="message"
                 name="message"
                 placeholder="Your Message"

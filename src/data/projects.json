@@ -36,7 +36,7 @@
     {
         "project_name": "Jottings",
         "image_Url": "Jottings_Projects_View.jpeg",
-        "description": "A Kanban-style list making application, created using the MERN (Postgres, Express, React, Node) stack",
+        "description": "A Kanban-style list making application, created using the MERN (MongoDB, Express, React, Node) stack",
         "live_site": "https://jottings-frontend.onrender.com/",
         "repo_site":"https://github.com/Martin-Martinez4/jottings",
         "tech": ["React", "NodeJS", "Express", "MongoDB"],
